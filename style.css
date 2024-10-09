@@ -172,3 +172,7 @@
 .headerh1-2, .headerh4-2 {
     color: #f7941e;
 }
+
+#headerText {
+    display: none; /* Hides the element by default */
+}
