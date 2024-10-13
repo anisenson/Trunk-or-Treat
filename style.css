@@ -1,140 +1,154 @@
 /*Spider*/
-    .spider {
-        position: absolute;
-        display: inline-block;
-        top: 0;
-        left: 30%;
-        
-        transition: .5s ease-in-out;
+.spider {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 30%;
+
+    transition: .5s ease-in-out;
 
     /*animate*/
-        animation: swing .5s infinite;
-        transform-origin: top;
-    }
+    animation: swing .5s infinite;
+    transform-origin: top;
+}
 
-    .spider .spiderweb {
-        width: 2px;
-        height: 200px;
-        margin-left: 49px;
-        background: rgba(255,255,255, .7);
-    }
+.spider .spiderweb {
+    width: 2px;
+    height: 200px;
+    margin-left: 49px;
+    background: rgba(255, 255, 255, .7);
+}
 
-    .spider .body {
-        width: 100px;
-        height: 80px;
-        background: black;
-        position: relative;
-        border-radius: 50%;
-    }
+.spider .body {
+    width: 100px;
+    height: 80px;
+    background: black;
+    position: relative;
+    border-radius: 50%;
+}
 
-    .spider .body .eye {
-        width: 33px;
-        height: 33px;
-        position: absolute;
-        bottom: 20px;
-        background: #fff;
-        border-radius: 50%;
-    }
+.spider .body .eye {
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 20px;
+    background: #fff;
+    border-radius: 50%;
+}
 
-    .spider .body .eye.left {
-        left: 15px;
-    }
+.spider .body .eye.left {
+    left: 15px;
+}
 
-    .spider .body .eye.right {
-        right: 15px;
-    }
+.spider .body .eye.right {
+    right: 15px;
+}
 
-    .spider .body .eye:after {
-        background: purple;
-        width: 7px;
-        height: 7px;
-        content: '';
-        display: block;
-        margin: 55%;
-        border-radius: 50%;
-    }
+.spider .body .eye:after {
+    background: purple;
+    width: 7px;
+    height: 7px;
+    content: '';
+    display: block;
+    margin: 55%;
+    border-radius: 50%;
+}
 
-    .spider .legs .leg {
-        width: 80px;
-        height: 40px;
-        margin-top: -20px;
-        border: 5px solid transparent;
-        border-top-color: #000;
-        border-radius: 40px 40px 0 0;
-    }
+.spider .legs .leg {
+    width: 80px;
+    height: 40px;
+    margin-top: -20px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+    border-radius: 40px 40px 0 0;
+}
 
-    .spider .legs {
-        position: absolute;
-        bottom: -10%;
-        z-index: -1;
-    }
+.spider .legs {
+    position: absolute;
+    bottom: -10%;
+    z-index: -1;
+}
 
-    .spider .legs.left {
-        left: -70%;
-    }
-    .spider .legs.right {
-        right: -60%;
-    }
+.spider .legs.left {
+    left: -70%;
+}
 
-
-    .legs.left .leg:nth-child(1){
-        transform: rotate(10deg);
-        margin-left: 10px;
-    }
-    .legs.right .leg:nth-child(1){
-        transform: rotate(-10deg);
-        margin-left: -10px;
-    }
+.spider .legs.right {
+    right: -60%;
+}
 
 
-    .legs.left .leg:nth-child(2){
-        transform: rotate(-20deg);
-        margin-left: 20px;
-    }
-    .legs.right .leg:nth-child(2){
-        transform: rotate(20deg);
-        margin-left: -20px;
-    }
+.legs.left .leg:nth-child(1) {
+    transform: rotate(10deg);
+    margin-left: 10px;
+}
+
+.legs.right .leg:nth-child(1) {
+    transform: rotate(-10deg);
+    margin-left: -10px;
+}
 
 
-    .legs.left .leg:nth-child(3){
-        transform: rotate(-50deg);
-        margin-left: 30px;
-    }
-    .legs.right .leg:nth-child(3){
-        transform: rotate(50deg);
-        margin-left: -30px;
+.legs.left .leg:nth-child(2) {
+    transform: rotate(-20deg);
+    margin-left: 20px;
+}
+
+.legs.right .leg:nth-child(2) {
+    transform: rotate(20deg);
+    margin-left: -20px;
+}
+
+
+.legs.left .leg:nth-child(3) {
+    transform: rotate(-50deg);
+    margin-left: 30px;
+}
+
+.legs.right .leg:nth-child(3) {
+    transform: rotate(50deg);
+    margin-left: -30px;
+}
+
+@keyframes look {
+
+    0%,
+    40%,
+    100% {
+        transform: translateX(0);
     }
 
-    @keyframes look {
-        0%, 40%, 100% {
-            transform: translateX(0);
-        }
-        45%, 95%, {
-            transform: translateX(-110%);
-        }
-    }
+    45%,
+    95%,
+    {
+    transform: translateX(-110%);
+}
+}
 
-    @keyframes swing {
-        0%, 100%, {
-            transform: translateY(0);
-        }
+@keyframes swing {
 
-        50% {
-            transform: translatey(-20px);
-        }
-    }
+    0%,
+    100%,
+    {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translatey(-20px);
+}
+}
+
 /*End Spider*/
 
 
 
 .font-main {
     font-family: "Creepster", system-ui;
-    font-size-adjust: 0.9; 
+    font-size-adjust: 0.9;
 }
 
 
-.font-alt{
+.font-alt {
     font-family: "Rubik", sans-serif;
 }
 
@@ -165,27 +179,30 @@
 
 .section1 {
     background-image: url(images/halloween-background.jpeg);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    min-height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
     z-index: -1;
 }
 
 .section2 {
-    background: linear-gradient(to top, #b99bd3, black); 
+    background: linear-gradient(to top, #b99bd3, black);
     color: #f7941e;
 }
+
 .headerDiv {
     margin-top: 40vh;
 }
 
-.headerh1, .headerh4 {
+.headerh1,
+.headerh4 {
     color: white;
 }
 
-.headerh1-2, .headerh4-2 {
+.headerh1-2,
+.headerh4-2 {
     color: #f7941e;
 }
 
@@ -207,4 +224,86 @@
 
 .col-header {
     color: #f7941e;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/*arrow from https://codepen.io/jltk/pen/QEaxMx */
+
+.arrow {
+    display: none;
+    width: 38px;
+    height: 14px;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+    transition: ease 1s;
+    -webkit-animation: bouncey 1.6s linear infinite;
+    animation: bouncey 1.6s linear infinite;
+}
+
+.arrow ul {
+    list-style: none;
+}
+
+.arrow ul li {
+    width: 24px;
+    height: 4px;
+    background: #f7941e;
+}
+
+.arrow ul li:nth-child(1) {
+    left: 0;
+    top: 0;
+    position: absolute;
+    transform: rotate(45deg);
+    border-radius: 5px 0 0 5px;
+}
+
+.arrow ul li:nth-child(2) {
+    left: 14px;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.arrow:hover {
+    opacity: 1;
+}
+
+@-webkit-keyframes bouncey {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bouncey {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
