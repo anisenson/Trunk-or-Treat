@@ -127,6 +127,18 @@
 /*End Spider*/
 
 
+
+.font-main {
+    font-family: "Creepster", system-ui;
+    font-size-adjust: 0.9; 
+}
+
+
+.font-alt{
+    font-family: "Rubik", sans-serif;
+}
+
+
 .navbar {
     background-color: transparent;
     font-size: 20px;
@@ -134,7 +146,6 @@
     position: fixed;
     width: 100%;
     top: 0;
-    font-family: "Creepster", system-ui;
 }
 
 .nav-link {
@@ -172,7 +183,6 @@
 
 .headerh1, .headerh4 {
     color: white;
-    font-family: "Creepster", system-ui;;
 }
 
 .headerh1-2, .headerh4-2 {
