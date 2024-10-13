@@ -200,3 +200,11 @@
 .spider {
     display: none;
 }
+
+.text-col {
+    color: #b99bd3;
+}
+
+.col-header {
+    color: #f7941e;
+}
