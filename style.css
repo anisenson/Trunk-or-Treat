@@ -134,6 +134,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    font-family: "Creepster", system-ui;
 }
 
 .nav-link {
@@ -171,6 +172,7 @@
 
 .headerh1, .headerh4 {
     color: white;
+    font-family: "Creepster", system-ui;;
 }
 
 .headerh1-2, .headerh4-2 {
