@@ -333,7 +333,7 @@
 }
 
 .customBorder {
-    border: 1px solid white;
+    border: 2px solid #f7941e;
 }
 
 .image-wrapper {
@@ -346,11 +346,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: white;
-    color: black;
+    background-color:rgba(0, 0, 0, 0.863);
+    color: #f7941e;
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 20px;
     display: none; 
     opacity: 0.8;  
 }
@@ -359,4 +359,17 @@
     display: block;
     width: 100%;
     height: auto;
+}
+
+
+.showcaseHeader {
+    color: #f7941e;
+}
+
+.showcaseIMG {
+    transition: transform 0.3s ease-in-out;  
+}
+
+.showcaseIMG:hover {
+    transform: scale(1.01);  
 }
