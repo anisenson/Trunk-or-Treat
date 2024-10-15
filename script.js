@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    /*home page effects */
     $('#headerText2').delay(2500).show(100);
     $('.arrow').delay(2500).show(100);
 
@@ -6,13 +8,13 @@ $(document).ready(function () {
     $('#headerText').fadeIn(3000);
 
 
-
+    /*buttons on home page */
     $('.toggle-button').on('click', function() {
         $(this).next('.toggle-content').fadeToggle();  
     });
 
 
-
+    /*Showcase images hover */
     $('.showcaseIMG').on('mouseenter', function () {
         $(this).next('.description').fadeIn(300);
     });
@@ -22,14 +24,14 @@ $(document).ready(function () {
     });
 
 
-
+    /*Schedule buttons */
     $('.event-header').on('click', function() {
         $(this).next('.event-details').slideToggle();  
     });
 
 
 
-    /*Chat gpt did this - When you scroll down 50* pixels, the navbar gets the class of scrolled which gives it a transparent black background- easier to read. Really cool and simple use of jquery!
+    /*Chat gpt did this - When you scroll down 50 pixels, the navbar gets the class of scrolled which gives it a transparent black background- easier to read. Really cool and simple use of jquery!
     */
     $(window).scroll(function () {
         if ($(this).scrollTop() > 50) {  // Change 50 to the number of pixels you want
@@ -38,9 +40,6 @@ $(document).ready(function () {
             $('.navbar').removeClass('scrolled');
         }
     });
-
-
-   
 
 
 
