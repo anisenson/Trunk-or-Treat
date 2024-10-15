@@ -317,6 +317,28 @@
 }
 
 
+.toggle-content {
+    display: none;
+}
+
+.custombtn {
+    background-color: #f7941e; 
+    color: black; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 30px; /
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.custombtn:hover {
+    background-color: #ce7d1b; 
+    color: white;
+}
+
+
+
 /*SHOWCASE PAGE*/
 
 .section-showcase-background {

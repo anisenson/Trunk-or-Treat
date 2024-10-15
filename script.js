@@ -7,6 +7,12 @@ $(document).ready(function () {
 
 
 
+    $('.toggle-button').on('click', function() {
+        $(this).next('.toggle-content').fadeToggle();  
+    });
+
+
+
     $('.showcaseIMG').on('mouseenter', function () {
         $(this).next('.description').fadeIn(300);
     });
@@ -26,6 +32,9 @@ $(document).ready(function () {
             $('.navbar').removeClass('scrolled');
         }
     });
+
+
+
 
 
 
