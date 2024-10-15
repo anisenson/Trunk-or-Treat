@@ -308,3 +308,24 @@
         transform: translateY(0);
     }
 }
+
+
+/*SHOWCASE PAGE*/
+
+.section-showcase-background {
+    background-image: url(images/halloween-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.customPadding {
+    padding-top: 100px;
+}
+
+.customBorder {
+    border: 1px solid white;
+}
