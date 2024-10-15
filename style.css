@@ -157,10 +157,16 @@
     background-color: transparent;
     font-size: 20px;
     z-index: 1;
-    position: fixed;
     width: 100%;
     top: 0;
+    transition: background-color 0.3s ease-in-out
 }
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.70); 
+}
+
+
 
 .nav-link {
     margin: 5px;
@@ -328,4 +334,29 @@
 
 .customBorder {
     border: 1px solid white;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    display: none; 
+    opacity: 0.8;  
+}
+
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
 }
