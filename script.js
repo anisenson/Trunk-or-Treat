@@ -23,6 +23,12 @@ $(document).ready(function () {
 
 
 
+    $('.event-header').on('click', function() {
+        $(this).next('.event-details').slideToggle();  
+    });
+
+
+
     /*Chat gpt did this - When you scroll down 50* pixels, the navbar gets the class of scrolled which gives it a transparent black background- easier to read. Really cool and simple use of jquery!
     */
     $(window).scroll(function () {
@@ -34,7 +40,7 @@ $(document).ready(function () {
     });
 
 
-
+   
 
 
 

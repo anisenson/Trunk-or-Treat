@@ -396,3 +396,27 @@
 .showcaseIMG:hover {
     transform: scale(1.01);  
 }
+
+
+/*Schedule page */
+.event-details {
+    display: none; 
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    
+}
+.event-header {
+    cursor: pointer; 
+    padding: 10px;
+    background-color: black; 
+    color: white;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+    font-size: 20px;
+    border: 1px solid #f7941e;
+}
+.event-header:hover {
+    background-color: #f7941e; 
+}
